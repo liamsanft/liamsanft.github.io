@@ -27,6 +27,7 @@ header {
     margin-top: 1.5em;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 .logo {
@@ -56,6 +57,7 @@ aside {
     top: 50%;
     transform: translateY(-50%);
     right: 0;
+    z-index: 2;
 }
 
 .projectsbutton {
@@ -75,6 +77,19 @@ aside {
 
 .projectsbutton:hover {
     cursor: pointer;
+}
+
+/* nav */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0%;
+    z-index: 1;
+    transition: left 1s;
 }
 
 /* main */
@@ -117,6 +132,7 @@ footer {
     width: 90%;
     margin-left: 5%;
     margin-bottom: 1em;
+    z-index: 2;
 }
 
 .imprint {
